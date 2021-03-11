@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.pop-up{
+	display: none;
+
+}
+
+.pop-up__overlay{
+	z-index: 4;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+.pop-up__window{
+	position: relative;
+	width: 600px;
+	
+	border-radius: 5px;
+	background: #fff;
+	margin: 200px auto;
+	padding: 10px;
+	animation-name: animtop;
+	animation-duration: .4s;
+}
+
+@keyframes animtop{
+	from{
+		top: -300px;
+		opacity: 0;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+.pop-up__header{
+	font-size: 24px;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+}
+.pop-up__body{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.pop-up__close{
+	cursor: pointer;
+}
+.pop-up__close-img{
+	width: 25px;
+	height: 25px;
+}
+.pop-up__input{
+	padding: 5px;
+	font-size: 14px;
+}
+.pop-up__button{
+	margin-top: 15px;
+	cursor: pointer;
+	padding: 7px 25px;
+	background-color: #5ACE99;
+	border: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	
+}
+.pop-up__button:hover{
+	background-color: #4BAB80;
+}
+.news{
+	height: 450px;
+}
+.news__body{
+	margin-top: 55px;
+}
+.news__title{
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.news__slider{
+
+	margin: 0 auto;
+	width: 900px;
+	/*height: 100%;*/
+	overflow: hidden;
+}
+.news__block{
+	height: 100%;
+	width: 1800px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+
+}
+
+.news__item{
+	margin-left: 50px;
+ 	width: 300px;
+ 	height: 300px;
+ 	padding: 0;
+ 	text-decoration: none;
+ 	color: #000;
+ 	outline: none;
+ 	border: none;
+ 	text-align: left;
+ 	cursor: pointer;
+
+}
+
+.news__item:hover .news__text-block{
+	background-color: #B5D2C5;
+}
+
+.news__item:hover .news__heading{
+	text-decoration: underline;
+}
+.news__img-block{
+	position: relative;
+	height: 120px;
+	width: 100%;
+	overflow: hidden;
+}
+.news__img{
+	position: absolute;
+	/*max-width: 100%;*/
+	height: 200px;
+	/*display: block;*/
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+
+
+}
+.news__text-block{
+	padding: 15px 10px;
+	background-color: #f1f1f1;
+	height: 130px;
+}
+.news__date{
+	font-size: 14px;
+}
+.news__heading{
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.news__discription{
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+
+.news__slider-btn__prev{
+	
+
+	
+}
+.news__slider-btn__next{
+	
+
+	
+}
+.news__slider-arrow{
+	
+}
+.news__slider-arrow:hover{
+	cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+	<p class="biba">fffffffffffffffffffffffffasfdsgfdghfffd322423</p>
+
+	<button class="pop-up__button">Открыть</button>
+	<div class="pop-up">
+		<div class="pop-up__overlay">
+			<div class="pop-up__window">
+				<div class="pop-up__header">
+					<span class="pop-up__title">Заполните форму</span>
+					<span class="pop-up__close">Х</span>
+				</div>
+				<div class="pop-up__body">
+					ПопапТело
+				</div>
+				<div class="feedback__copyright">Отправляя данную форму, даю согласие на обработку моих персональных данных в соответствии с <a class="under" href="">Политикой в отношении обработки персональных данных.</a></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section class="news">
+		<div class="news__body container">
+		
+			<div class="news__slider">
+				<div class="news__block">
+
+						<a class="news__item" href="#" >
+							<div class="news__img-block">
+								<img src="news.png" alt="" class="news__img">
+							</div>
+							<div class="news__text-block">
+								<p class="news__date">31.02.2020</p>
+								<p class="news__heading">esdfgudsyhdghjdfghdfh</p>
+							</div>
+						</a>
+						<a class="news__item" href="#" >
+							<div class="news__img-block">
+								<img src="news.png" alt="" class="news__img">
+							</div>
+							<div class="news__text-block">
+								<p class="news__date">31.02.2020</p>
+								<p class="news__heading">esdfgudsyhdghjdfghdfh</p>
+							</div>
+						</a>
+						<a class="news__item" href="#" >
+							<div class="news__img-block">
+								<img src="news.png" alt="" class="news__img">
+							</div>
+							<div class="news__text-block">
+								<p class="news__date">31.02.2020</p>
+								<p class="news__heading">esdfgudsyhdghjdfghdfh</p>
+							</div>
+						</a>
+						<a class="news__item" href="#" >
+							<div class="news__img-block">
+								<img src="news.png" alt="" class="news__img">
+							</div>
+							<div class="news__text-block">
+								<p class="news__date">31.02.2020</p>
+								<p class="news__heading">esdfgudsyhdghjdfghdfh</p>
+							</div>
+						</a>
+						<a class="news__item" href="#" >
+							<div class="news__img-block">
+								<img src="news.png" alt="" class="news__img">
+							</div>
+							<div class="news__text-block">
+								<p class="news__date">31.02.2020</p>
+								<p class="news__heading">esdfgudsyhdghjdfghdfh</p>
+							</div>
+						</a>
+						<a class="news__item" href="#" >
+							<div class="news__img-block">
+								<img src="news.png" alt="" class="news__img">
+							</div>
+							<div class="news__text-block">
+								<p class="news__date">31.02.2020</p>
+								<p class="news__heading">esdfgudsyhdghjdfghdfh</p>
+							</div>
+						</a>
+
+				</div>
+			</div>
+			<button class="news__slider-btn__prev">prev</button>
+			<button class="news__slider-btn__next">next</button>
+			
+		</div>
+	</section>
+	<h1 class="copy">dfgfhgfjghkmhj,</h1>
+	<input type="text" class="paste">
+
+<script src="base.js"></script>
+<script src="plug/pop-up.js"></script>
+<script src="plug/cut.js"></script>
+<script src="plug/slider.js"></script>
+<script src="plug/copy.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
